@@ -18,7 +18,7 @@
 # ~> https://jekyllrb.com/docs/configuration/options/
 
 title:            'Arabic Renaissance Sculpture'
-description:      'an exhibition of historical photographs from the Kunsthistorisches Insitut in Florence'
+description:      'an exhibition of historical photographs from the Kunsthistorisches Institut in Florence'
 url:              'https://rutgersdh.github.io'
 baseurl:          '/ars'
 copyright:        '2025'
