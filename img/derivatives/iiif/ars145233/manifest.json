@@ -1,0 +1,50 @@
+---
+layout: none
+---
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/ars145233/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "ars145233",
+  "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233/full/250,/0/default.jpg",
+  "viewingDirection": "left-to-right",
+  "viewingHint": "individuals",
+  "sequences": [
+    {
+      "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/sequence/ars145233.json",
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@type": "sc:Canvas",
+          "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/ars145233.json",
+          "label": "front",
+          "width": 2797,
+          "height": 3997,
+          "thumbnail": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233/full/250,/0/default.jpg",
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/annotation/ars145233.json",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233/full/full/0/default.jpg",
+                "@type": "dcterms:Image",
+                "format": "image/jpeg",
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233",
+                  "profile": "http://iiif.io/api/image/2/level0.json"
+                },
+                "width": 2797,
+                "height": 3997
+              },
+              "on": "{{ '/' | absolute_url }}img/derivatives/iiif/canvas/ars145233.json"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "full": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233/full/full/0/default.jpg",
+  "fullwidth": "{{ '/' | absolute_url }}img/derivatives/iiif/images/ars145233/full/1140,/0/default.jpg"
+}

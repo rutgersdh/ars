@@ -17,12 +17,12 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Wax'
-description:      'Minimal Exhibitions with Jekyll'
-url:              'https://minicomp.github.io'
-baseurl:          '/wax'
-copyright:        'Example copyright org, 2023'
-logo:             '/assets/logo.png'
+title:            'Arabic Renaissance Sculpture'
+description:      'an exhibition of historical photographs from the Kunsthistorisches Insitut in Florence'
+url:              'https://rutgersdh.github.io'
+baseurl:          '/ars'
+copyright:        '2025'
+logo:             '/img/bildmarke-khi.png'
 default_thumb:    '/assets/default.png'
 
 # ---------------------------------------------------------------
@@ -59,13 +59,13 @@ kramdown:
 collections:
   exhibits:
     output: true
-  qatar: # name of collection
+  ars: # name of collection
     output: true # makes sure pages are output as html files
-    layout: 'qatar_item' # the layout for the pages to use
+    layout: 'ars_item' # the layout for the pages to use
     metadata:
-      source: 'qatar.csv' # path to the metadata file within `_data`
+      source: 'ars.csv' # path to the metadata file within `_data`
     images:
-      source: 'raw_images/qatar' # path to the directory of images within `_data`
+      source: 'raw_images/ars' # path to the directory of images within `_data`
 
 # --------------------------------------------------------------
 # SEARCH INDEX SETTINGS
@@ -79,15 +79,16 @@ search:
   main:
     index: '/search/index.json' # file the index will get written to
     collections:
-      qatar:
+      ars:
         content: false # whether or not to index page content
         fields: # the metadata fields to index
           - artist
+          - title
           - location
-          - label
-          - _date
-          - object_type
-          - current_location
+          - photographer
+          - type_of_photo
+          - category
+          - entry_year
 
 # --------------------------------------------------------------
 # SITE MENU SETTINGS
@@ -97,14 +98,6 @@ search:
 # submenu via `sub`.
 
 menu:
-  - label: 'About'
-    sub:
-      - label: 'Wax'
-        link: '/about/'
-      - label: 'Documentation'
-        link: 'https://minicomp.github.io/wiki/wax/'
-      - label: 'Credits'
-        link: '/credits/'
   - label: 'Exhibits'
     sub:
       - label: 'Inline Parallax Image'
@@ -115,8 +108,6 @@ menu:
     link: '/collection/'
   - label: 'Search'
     link: '/search/'
-  - label: 'Reuse'
-    link: '/reuse/'
 
 # --------------------------------------------------------------
 # SITE FOOTER SETTINGS
@@ -126,12 +117,13 @@ menu:
 footer:
   links:
     - label: 'GitHub'
-      link: 'https://github.com/minicomp/wax'
-    - label: 'Credits'
-      link: '/credits'
-    - label: 'Wiki'
-      link: 'https://minicomp.github.io/wiki/wax/'
+      link: 'https://github.com/rutgersdh/ars'
+    - label: 'Contact'
+      link: 'mailto:alex.seggerman@rutgers.edu'
   logos:
-    - img: '/img/logo.png'
+    - img: '/img/bildmarke-khi.png'
+      link: 'https://www.khi.fi.it/'
+    - img: '/img/RLIB_V_WHITE_BLACK_RGB.png'
+      link: 'https://www.libraries.rutgers.edu/'
 
 # FIN

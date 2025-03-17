@@ -4,18 +4,16 @@ title: Browse the Collection
 permalink: /collection/
 ---
 
-This site's sample collection comprises a set of objects, each of which is represented by one or more images. The collection items in this demo are from The Museum of Islamic Art, Qatar, (courtesy of [WikiMedia](https://commons.wikimedia.org/wiki/Category:Google_Art_Project_works_in_The_Museum_of_Islamic_Art,_Qatar) and [Google Art Project](https://www.google.com/culturalinstitute/about/artproject/)) and The Qatar National Library (via [World Digital Library](https://www.wdl.org/en/)).
+Some text about the selection of images and their source.
 
-## By Location
-{% include collection_gallery.html facet_by='location' collection='qatar' %}
+## By Artist
+{% include collection_gallery.html facet_by='artist' collection='ars' %}
 
-## By Object Type
+## By Photography Type
 
-### Manuscripts
-{% include collection_gallery.html facet_by='object_type' only='manuscript' collection='qatar' %}
-### Portraits
-{% include collection_gallery.html facet_by='object_type' only='portrait' collection='qatar' %}
-### Maps
-{% include collection_gallery.html facet_by='object_type' only='map' collection='qatar' %}
-### Panels
-{% include collection_gallery.html facet_by='object_type' only='panel' collection='qatar' %}
+### Albumen
+{% include collection_gallery.html facet_by='type_of_photo' only='albumen' collection='ars' %}
+### Pigment Print 
+{% include collection_gallery.html facet_by='type_of_photo' only='pigment print' collection='ars' %}
+### Silver Gelatin
+{% include collection_gallery.html facet_by='type_of_photo' only='silver gelatin' collection='ars' %}
