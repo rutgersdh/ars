@@ -17,8 +17,8 @@
 # Feel free to change these! For more info, refer to:
 # ~> https://jekyllrb.com/docs/configuration/options/
 
-title:            'Arabic Renaissance Sculpture'
-description:      'an exhibition of historical photographs from the Kunsthistorisches Institut in Florence'
+title:            'Florentine Arabic // العربية الفلورنسية'
+description:      'Photographs of Arabic Epigraphy on Florentine Renaissance Sculpture'
 url:              'https://rutgersdh.github.io'
 baseurl:          '/ars'
 copyright:        '2025'
@@ -33,7 +33,7 @@ default_thumb:    '/assets/default.png'
 permalink: 'pretty'
 sass:
   style: compressed
-exclude: ["Gemfile*", "*.gemspec", "Rakefile", "vendor", "spec", "README.md", "LICENSE.txt", "Docker*"]
+exclude: ["Gemfile*", "*.gemspec", "Rakefile", "vendor", "spec", "README.md", "LICENSE.txt", "Docker*", "*.ruby-version"]
 webrick:
   headers:
     'Access-Control-Allow-Origin': '*'
